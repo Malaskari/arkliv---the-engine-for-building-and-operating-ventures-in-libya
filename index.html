@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkliv | Hybrid Venture Builder & Startup Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+              arabic: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                blue: '#1F3B5C',   // Primary
+                gold: '#D4B24C',   // Accent
+                navy: '#0F2238',   // Dark
+                gray: '#F2F4F7',   // UI Background
+              }
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFFF;
+        color: #0F2238;
+        scroll-behavior: smooth;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Outfit', sans-serif;
+      }
+      html[lang="ar"] body {
+        font-family: 'Tajawal', sans-serif;
+      }
+      html[lang="ar"] h1, 
+      html[lang="ar"] h2, 
+      html[lang="ar"] h3, 
+      html[lang="ar"] h4, 
+      html[lang="ar"] h5, 
+      html[lang="ar"] h6 {
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 700;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F2F4F7;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1F3B5C; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0F2238; 
+      }
+      .bg-grid-brand {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, rgba(31, 59, 92, 0.05) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(31, 59, 92, 0.05) 1px, transparent 1px);
+      }
+      .bg-dots-brand {
+        background-image: radial-gradient(rgba(31, 59, 92, 0.1) 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
